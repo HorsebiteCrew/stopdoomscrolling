@@ -5,7 +5,6 @@ st.write ("import streamlit as st")
 import json
 import os
 import base64
-import bcrypt
 from email.mime.text import MIMEText
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
