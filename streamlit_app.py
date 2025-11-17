@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("🎬 Content Discovery App")
-st.write (import streamlit as st
+st.write (import streamlit as st)
 import json
 import os
 import base64
