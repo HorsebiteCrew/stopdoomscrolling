@@ -1,1 +1,8 @@
 streamlit
+simple-justwatch-python-api
+tmdbv3api
+google-auth-oauthlib
+google-auth
+google-api-python-client
+requests
+pandas
