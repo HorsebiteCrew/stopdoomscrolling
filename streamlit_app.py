@@ -71,14 +71,6 @@ if st.sidebar.button("Submit"):
             users[username] = hashed_pw
             save_users(users)
             st.sidebar.success("Registration successful! Please log in.")
-    elif action == "Login":
-        if username in users and bcrypt.checkpw(password.encode(), users[username].encode()):
-            st.sidebar.success(f"Welcome {username}!")
-            st.session_state["logged_in"] = True
-            st.session_state["username"] = username
-        else:
-            st.sidebar.error("Invalid credentials.")
-
 # --- Main App ---
 if st.session_state.get("logged_in"):
     PREF_FILE = f"preferences_{st.session_state['username']}.json"
